@@ -1,0 +1,116 @@
+/* Estilo básico para o site */
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Importando a fonte germânica (Fraktur) do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+
+/* Corpo da página */
+body {
+    font-family: 'Fruktur', 'Arial', sans-serif;  /* Usando fonte Fraktur para caligrafia germânica */
+    background-color: #111;  /* Fundo escuro */
+    color: #e5e5e5;  /* Cor do texto clara */
+    line-height: 1.6;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Estilo do container principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    border: 5px solid #d4af37;  /* Detalhes dourados */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);  /* Sombras discretas */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: #d4af37;  /* Texto dourado */
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 3px solid #d4af37;  /* Linha dourada embaixo do cabeçalho */
+}
+
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #d4af37;  /* Dourado no título */
+}
+
+/* Estilo das divs de santos */
+.santo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+    border: 2px solid #d4af37;  /* Linha dourada ao redor das divs dos santos */
+}
+
+.santo:hover {
+    transform: scale(1.05);
+}
+
+.santo img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.santo h3 {
+    font-size: 1.8em;
+    color: #d4af37;  /* Nome dos santos em dourado */
+    margin: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.santo p {
+    font-size: 1.1em;
+    color: #e5e5e5;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #d4af37;
+    padding: 20px 0;
+    border-top: 3px solid #d4af37;  /* Linha dourada no topo do rodapé */
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+/* Responsividade */
+@media screen and (min-width: 768px) {
+    .santo {
+        display: inline-block;
+        width: 30%;
+        margin: 1%;
+    }
+}
